@@ -1,0 +1,60 @@
+	var tito;
+	var c  = [];
+	var v = [];
+	
+	function salvaCapitulo(i,v1){
+		c[i] = v1;
+		v = [];
+	}
+	
+v[1]  =  'PAULO, servo de Deus, e apóstolo de Jesus Cristo, segundo a fé dos eleitos de Deus, e o conhecimento da verdade, que é segundo a piedade,';
+v[2]  =  'Em esperança da vida eterna, a qual Deus, que não pode mentir, prometeu antes dos tempos dos séculos;';
+v[3]  =  'Mas a seu tempo manifestou a sua palavra pela pregação que me foi confiada segundo o mandamento de Deus, nosso Salvador;';
+v[4]  =  'A Tito, meu verdadeiro filho, segundo a fé comum: Graça, misericórdia, e paz da parte de Deus Pai, e da do Senhor Jesus Cristo, nosso Salvador.';
+v[5]  =  'Por esta causa te deixei em Creta, para que pusesses em boa ordem as coisas que ainda restam, e de cidade em cidade estabelecesses presbíteros, como já te mandei:';
+v[6]  =  'Aquele que for irrepreensível, marido de uma mulher, que tenha filhos fiéis, que não possam ser acusados de dissolução nem são desobedientes.';
+v[7]  =  'Porque convém que o bispo seja irrepreensível, como despenseiro da casa de Deus, não soberbo, nem iracundo, nem dado ao vinho, nem espancador, nem cobiçoso de torpe ganância;';
+v[8]  =  'Mas dado à hospitalidade, amigo do bem, moderado, justo, santo, temperante;';
+v[9]  =  'Retendo firme a fiel palavra, que é conforme a doutrina, para que seja poderoso, tanto para admoestar com a sã doutrina, como para convencer os contradizentes.';
+v[10]  =  'Porque há muitos desordenados, faladores, vãos e enganadores, principalmente os da circuncisão,';
+v[11]  =  'Aos quais convém tapar a boca; homens que transtornam casas inteiras ensinando o que não convém, por torpe ganância.';
+v[12]  =  'Um deles, seu próprio profeta, disse: Os cretenses são sempre mentirosos, bestas ruins, ventres preguiçosos.';
+v[13]  =  'Este testemunho é verdadeiro. Portanto, repreende-os severamente, para que sejam sãos na fé.';
+v[14]  =  'Não dando ouvidos às fábulas judaicas, nem aos mandamentos de homens que se desviam da verdade.';
+v[15]  =  'Todas as coisas são puras para os puros, mas nada é puro para os contaminados e infiéis; antes o seu entendimento e consciência estão contaminados.';
+v[16]  =  'Confessam que conhecem a Deus, mas negam-no com as obras, sendo abomináveis, e desobedientes, e reprovados para toda a boa obra.';
+salvaCapitulo(1, v);
+v[1]  =  'TU, porém, fala o que convém à sã doutrina.';
+v[2]  =  'Os velhos, que sejam sóbrios, graves, prudentes, sãos na fé, no amor, e na paciência;';
+v[3]  =  'As mulheres idosas, semelhantemente, que sejam sérias no seu viver, como convém a santas, não caluniadoras, não dadas a muito vinho, mestras no bem;';
+v[4]  =  'Para que ensinem as mulheres novas a serem prudentes, a amarem seus maridos, a amarem seus filhos,';
+v[5]  =  'A serem moderadas, castas, boas donas de casa, sujeitas a seus maridos, a fim de que a palavra de Deus não seja blasfemada.';
+v[6]  =  'Exorta semelhantemente os jovens a que sejam moderados.';
+v[7]  =  'Em tudo te dá por exemplo de boas obras; na doutrina mostra incorrupção, gravidade, sinceridade,';
+v[8]  =  'Linguagem sã e irrepreensível, para que o adversário se envergonhe, não tendo nenhum mal que dizer de nós.';
+v[9]  =  'Exorta os servos a que se sujeitem a seus senhores, e em tudo agradem, não contradizendo,';
+v[10]  =  'Não defraudando, antes mostrando toda a boa lealdade, para que em tudo sejam ornamento da doutrina de Deus, nosso Salvador.';
+v[11]  =  'Porque a graça de Deus se há manifestado, trazendo salvação a todos os homens,';
+v[12]  =  'Ensinando-nos que, renunciando à impiedade e às concupiscências mundanas, vivamos neste presente século sóbria, e justa, e piamente,';
+v[13]  =  'Aguardando a bem-aventurada esperança e o aparecimento da glória do grande Deus e nosso Salvador Jesus Cristo;';
+v[14]  =  'O qual se deu a si mesmo por nós para nos remir de toda a iniqüidade, e purificar para si um povo seu especial, zeloso de boas obras.';
+v[15]  =  'Fala disto, e exorta e repreende com toda a autoridade. Ninguém te despreze.';
+salvaCapitulo(2, v);
+v[1]  =  'Admoesta-os a que se sujeitem aos principados e potestades, que lhes obedeçam, e estejam preparados para toda a boa obra;';
+v[2]  =  'Que a ninguém infamem, nem sejam contenciosos, mas modestos, mostrando toda a mansidão para com todos os homens.';
+v[3]  =  'Porque também nós éramos noutro tempo insensatos, desobedientes, extraviados, servindo a várias concupiscências e deleites, vivendo em malícia e inveja, odiosos, odiando-nos uns aos outros.';
+v[4]  =  'Mas quando apareceu a benignidade e amor de Deus, nosso Salvador, para com os homens,';
+v[5]  =  'Não pelas obras de justiça que houvéssemos feito, mas segundo a sua misericórdia, nos salvou pela lavagem da regeneração e da renovação do Espírito Santo,';
+v[6]  =  'Que abundantemente ele derramou sobre nós por Jesus Cristo nosso Salvador;';
+v[7]  =  'Para que, sendo justificados pela sua graça, sejamos feitos herdeiros segundo a esperança da vida eterna.';
+v[8]  =  'Fiel é a palavra, e isto quero que deveras afirmes, para que os que crêem em Deus procurem aplicar-se às boas obras; estas coisas são boas e proveitosas aos homens.';
+v[9]  =  'Mas não entres em questões loucas, genealogias e contendas, e nos debates acerca da lei; porque são coisas inúteis e vãs.';
+v[10]  =  'Ao homem herege, depois de uma e outra admoestação, evita-o,';
+v[11]  =  'Sabendo que esse tal está pervertido, e peca, estando já em si mesmo condenado.';
+v[12]  =  'Quando te enviar Ártemas, ou Tíquico, procura vir ter comigo a Nicópolis; porque deliberei invernar ali.';
+v[13]  =  'Acompanha com muito cuidado Zenas, doutor da lei, e Apolo, para que nada lhes falte.';
+v[14]  =  'E os nossos aprendam também a aplicar-se às boas obras, nas coisas necessárias, para que não sejam infrutuosos.';
+v[15]  =  'Saúdam-te todos os que estão comigo. Saúda tu os que nos amam na fé. A graça seja com vós todos. Amém.';
+salvaCapitulo(3, v);
+	
+	tito = c;

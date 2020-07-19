@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Bíblia</title>
+	<link rel="icon" href="img/imgBiblia.jpg" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/imgBiblia.jpg" type="image/x-icon" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf8">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script src="js/a.js"></script>
+	<script data-main="app" src="lib/require.js"></script>
+	<script src="jquery-1.11.3.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"></link>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var numero = 1;
+			$('.pull-me').click(function(){	
+				$('.panel').slideToggle(800);
+				if(numero == 1 ){
+					$('.pull-me').css('opacity',1);
+					numero = 2;
+				}else{
+					$('.pull-me').css('opacity',0.5);
+					numero = 1
+				}
+				
+			});
+		});
+	</script>
+	<script>
+		function abrirVersiculo(){
+			document.getElementById("teste").style.fontSize = "55px";
+			document.getElementById("teste").style.color="#ffffff";
+			var Lx = document.getElementById("livro");
+			Lx.value = corretor();
+			var sLivro     = Lx.value;
+			var iCapitulo  = parseInt(document.getElementById("capitulo").value);
+			var iVersiculo = parseInt(document.getElementById("versiculo").value);
+			require(['require', '../livros/' + sLivro], function (require) {
+				require( '../livros/'+ sLivro );
+				var versiculo = eval( sLivro + "[" + iCapitulo + "][" + iVersiculo + "]" );
+				$("#teste").html(versiculo);
+			});
+			
+			/* ----------------------  RECENTES ---------------------- */
+			var liv_r = $('input[name=liv_b]').val();
+			var cap_r = $('input[name=cap_b]').val();
+			var ver_r = $('input[name=ver_b]').val();
+			var desc  = $('#teste').text().substring(3,30);
+			if($('.livro').text() !== $('input[name=liv_b]').val()){
+				if($('.capitulo').text() !== $('input[name=cap_b]').val()){	
+					$('.panel').append('<div class="row"><div class="livro">' + liv_r +  '</div><div class="capitulo">' + cap_r + ':' + ver_r + '</div><div class="descricao">' + desc + '...</div></div>');
+				}
+			}
+			/*
+			if($('.livro').text() == $('input[name=liv_b]').val()){
+				if($('.capitulo').text() != $('input[name=cap_b]').val()){
+						$('.panel').append('<div class="row"><div class="livro">' + liv_r +  '</div> <div class="capitulo"' + cap_r + '</div>:' + ver_r + '<div class="vers">' + desc + '...</div></div>');	
+				}
+			}
+			/* ------------------------------------------------------- */	
+		}
+	</script>
+</head>
+<body onKeydown="setasVersiculo()">
+	<div class="recentes">
+		<div class="panel"></div>
+		<p class="slide"><div class="pull-me"><img src="img/recent.png" width="25" height="25" /></div></p>
+	</div>
+	<div id="teste">
+		<a href="https://mega.nz/#!ecNSSQbb!dzS102RIJeGwz-8DNMptplu8j5qgvuc9vD1Bhljs_7s"><img src="img/propaganda.jpg" height="300" width="300" id="propaganda" onClick="fPropaganda()"></a>
+	</div>
+	<div id="indice">
+		<input type="text" name="liv_b" id="livro" value="genesis" onClick="">      
+		<input type="number" name="cap_b" id="capitulo" value="1" onClick="">      
+		<input type="number" name="ver_b" id="versiculo" value="1" onBlur="abrirVersiculo()" onClick="">
+		<input id="bt" type='button' value='ir' onclick='abrirVersiculo();' />
+	</div>
+	<img src="img/direita.png" height="42" width="42" id="imgANTERIOR" onClick="anteriorVersiculo()">
+	<img src="img/esquerda.png" height="42" width="42" id="imgPROXIMO" onClick="proximoVersiculo()">
+</body>
+</html>
